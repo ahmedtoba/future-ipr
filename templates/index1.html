@@ -71,7 +71,7 @@ h5 {
     /* Results Table Styling*/
     .table-wrapper-scroll-y {
 display: block;
-max-height: 350px;
+max-height: 400px;
 overflow-y: auto;
 -ms-overflow-style: -ms-autohiding-scrollbar;
 }
@@ -341,7 +341,6 @@ function myFunction() {
     <table class="table table-bordered table-striped">
   <thead style="background: darkblue; color:white">
     <tr>
-      <th scope="col">#</th>
       <th scope="col">Pwf</th>
       <th scope="col">Present q<sub>o</sub></th>
       <th scope="col">Future q<sub>o</sub></th>
@@ -350,7 +349,7 @@ function myFunction() {
   <tbody>
     {%for c,m,n,o in count|zip(Pwf, qop, qoft)%}
     <tr>
-      <th scope="row">{{c}}</th>
+
       <td>{{m}}</td>
       <td>{{n}}</td>
       <td>{{o}}</td>

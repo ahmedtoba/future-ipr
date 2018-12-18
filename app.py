@@ -59,7 +59,7 @@ def result():
 
         myChart = py.plot({
                   'data': [Present, Future],
-                  'layout': go.Layout(title='Present IPR V.S Future IPR curves', xaxis=dict(title='qo, STB/day'), yaxis=dict(title='Pwf, Psig'), autosize=False,width=500,height=450)
+                  'layout': go.Layout(title='Present IPR V.S Future IPR curves', xaxis=dict(title='qo, STB/day'), yaxis=dict(title='Pwf, Psig'), autosize=False,width=600,height=450)
                   },output_type='div', show_link='False',include_plotlyjs='Flase',link_text="")
 
         tabPwf = [int(i) for i in Pwf]
